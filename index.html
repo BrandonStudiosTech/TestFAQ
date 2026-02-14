@@ -1,0 +1,213 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BTV | FAQ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="orb orb-one" aria-hidden="true"></div>
+  <div class="orb orb-two" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <p class="brand">BTV</p>
+      <p class="badge">FAQ / Local Draft</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">HELP CENTER</p>
+      <h1>Switching from the old app? Start with your platform below.</h1>
+      <p class="hero-copy">
+        Most Android, Roku, and Amazon users only need to update the app, sign in, and reset password if needed.
+        Apple users coming from an older app version usually need extra migration steps, covered below.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-ghost" href="#platform-paths">Platform Quick Start</a>
+        <a class="btn btn-primary" href="#apple-migration">Apple Migration Steps</a>
+      </div>
+    </section>
+
+    <section class="panel" id="platform-paths">
+      <div class="panel-heading">
+        <p class="eyebrow">QUICK START</p>
+        <h2>Platform Paths</h2>
+      </div>
+
+      <div class="path-grid">
+        <article class="path-card">
+          <p class="path-label">ANDROID / ROKU / AMAZON</p>
+          <h3>Usually just update and sign in</h3>
+          <ol>
+            <li>Update the BTV app from your device app store/channel store.</li>
+            <li>Open the app and sign in with your existing email.</li>
+            <li>If sign-in fails, reset your password and try again.</li>
+            <li>After reset, use the same credentials on all devices.</li>
+          </ol>
+        </article>
+
+        <article class="path-card">
+          <p class="path-label">APPLE (IPHONE / IPAD / APPLE TV)</p>
+          <h3>Old app users may need restore + reactivation</h3>
+          <ol>
+            <li>Delete the old app version.</li>
+            <li>Install the newest app.</li>
+            <li>Tap <strong>Restore Purchase</strong> before subscribing again.</li>
+            <li>Create or reset password when prompted.</li>
+          </ol>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="apple-migration">
+      <div class="panel-heading">
+        <p class="eyebrow">APPLE SUPPORT</p>
+        <h2>Apple App Migration and Reactivation</h2>
+      </div>
+
+      <ol class="timeline">
+        <li>
+          <h3>Delete the old app</h3>
+          <p>On iPhone, press and hold the old BTV app icon, tap <strong>Remove App</strong>, then confirm <strong>Delete App</strong>.</p>
+        </li>
+        <li>
+          <h3>Install the latest BTV app</h3>
+          <p>Download the newest app from the App Store, then make sure your device is signed in with the same Apple ID used for your original subscription.</p>
+        </li>
+        <li>
+          <h3>Tap Restore Purchase first</h3>
+          <p>Open the new app and do <strong>not</strong> tap Subscribe yet. Scroll the home screen and tap <strong>Restore Purchase</strong>.</p>
+        </li>
+        <li>
+          <h3>Create or reset your account password</h3>
+          <p>After restore succeeds, create your password (or reset it) when prompted. This activates your account for app and web login.</p>
+        </li>
+        <li>
+          <h3>Sign in everywhere</h3>
+          <p>Use that same email and new password to sign in on mobile, tablet, TV, and web.</p>
+        </li>
+      </ol>
+
+      <aside class="callout">
+        <h3>Important</h3>
+        <p>If Restore Purchase does not work, first confirm you are signed into the exact Apple ID that purchased the original subscription.</p>
+      </aside>
+    </section>
+
+    <section class="panel">
+      <div class="panel-heading">
+        <p class="eyebrow">CHECKLIST</p>
+        <h2>Quick Troubleshooting Before Support</h2>
+      </div>
+
+      <div class="checklist-grid" id="checklist">
+        <label><input type="checkbox" /> App updated to latest version</label>
+        <label><input type="checkbox" /> Signed in with correct email</label>
+        <label><input type="checkbox" /> Password reset attempted</label>
+        <label><input type="checkbox" /> Apple: Restore Purchase tapped</label>
+        <label><input type="checkbox" /> Apple: Correct Apple ID is active</label>
+        <label><input type="checkbox" /> Device restarted after update</label>
+      </div>
+
+      <button id="markDone" class="btn btn-small">Mark All Complete</button>
+    </section>
+
+    <section class="panel" id="faq">
+      <div class="panel-heading faq-heading">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2>Account and App Questions</h2>
+        </div>
+        <label class="search-wrap">
+          <span>Search</span>
+          <input id="faqSearch" type="search" placeholder="Type a keyword like Roku, restore, Apple ID, password" />
+        </label>
+      </div>
+
+      <div class="faq-list" id="faqList">
+        <article class="faq-item" data-keywords="android roku amazon update sign in password">
+          <button class="faq-question" aria-expanded="false">I use Android, Roku, or Amazon. Do I need to delete the app?</button>
+          <div class="faq-answer">
+            <p>Usually no. Most users on those platforms only need to update the app, sign in, and reset password if needed.</p>
+          </div>
+        </article>
+
+        <article class="faq-item" data-keywords="apple old app delete reinstall">
+          <button class="faq-question" aria-expanded="false">I am on Apple and had the old app. Do I need to reinstall?</button>
+          <div class="faq-answer">
+            <p>Yes. For users migrating from an older Apple app version, delete the old app and install the newest app before restoring purchases.</p>
+          </div>
+        </article>
+
+        <article class="faq-item" data-keywords="pay charged subscription apple">
+          <button class="faq-question" aria-expanded="false">Do I need to pay again if I already had a subscription in the old app?</button>
+          <div class="faq-answer">
+            <p>No. In most cases, you should restore your existing purchase. Open the new app and tap <strong>Restore Purchase</strong> before subscribing again.</p>
+          </div>
+        </article>
+
+        <article class="faq-item" data-keywords="subscribe accident">
+          <button class="faq-question" aria-expanded="false">I tapped Subscribe by accident. What should I do?</button>
+          <div class="faq-answer">
+            <p>Back out, then use <strong>Restore Purchase</strong>. If you were billed twice, contact support and include your Apple receipt so the team can review quickly.</p>
+          </div>
+        </article>
+
+        <article class="faq-item" data-keywords="restore missing button not showing">
+          <button class="faq-question" aria-expanded="false">I cannot find the Restore Purchase button.</button>
+          <div class="faq-answer">
+            <p>Update to the newest app version, restart your device, reopen the app, and scroll to the bottom of the home screen. The button appears there.</p>
+          </div>
+        </article>
+
+        <article class="faq-item" data-keywords="apple id wrong account">
+          <button class="faq-question" aria-expanded="false">My subscription is active in Apple, but the app still does not unlock.</button>
+          <div class="faq-answer">
+            <p>This is usually an Apple ID mismatch. Confirm the currently logged-in Apple ID matches the one used for the original purchase, then try restore again.</p>
+          </div>
+        </article>
+
+        <article class="faq-item" data-keywords="forgot password reset login all devices">
+          <button class="faq-question" aria-expanded="false">I reset my password. Will it work on all platforms?</button>
+          <div class="faq-answer">
+            <p>Yes. Once reset is complete, the same email and password should work on web, mobile, Roku, and Amazon devices.</p>
+          </div>
+        </article>
+
+        <article class="faq-item" data-keywords="cancel billing renew">
+          <button class="faq-question" aria-expanded="false">Where do I manage or cancel an Apple subscription?</button>
+          <div class="faq-answer">
+            <p>Apple subscriptions are managed in iPhone Settings under your Apple ID subscriptions list. Billing changes are handled by Apple.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel support">
+      <div>
+        <p class="eyebrow">NEED HELP?</p>
+        <h2>Contact Support</h2>
+        <p>Still stuck after the checklist and FAQ? Reach out and include your platform, device model, subscription receipt date, and the email you used in the app.</p>
+      </div>
+      <div class="support-actions">
+        <a class="btn btn-primary" id="supportEmail" href="mailto:support@itsbrandontv.com">support@itsbrandontv.com</a>
+        <button class="btn btn-ghost" id="copyEmail" type="button">Copy Email</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Copyright <span id="year"></span> BTV. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
