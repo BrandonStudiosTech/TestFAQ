@@ -59,38 +59,6 @@ body {
   margin: 0 auto;
 }
 
-.topbar {
-  position: sticky;
-  top: 0;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(8, 4, 5, 0.78);
-  z-index: 20;
-}
-
-.topbar-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 74px;
-}
-
-.brand {
-  margin: 0;
-  font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 1.4px;
-  font-size: 1.85rem;
-}
-
-.badge {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.88rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 999px;
-  padding: 0.36rem 0.75rem;
-}
-
 .hero {
   padding: 5.2rem 0 2.6rem;
 }
@@ -418,9 +386,5 @@ h1 {
 @media (max-width: 560px) {
   .panel {
     padding: 1.15rem;
-  }
-
-  .badge {
-    display: none;
   }
 }
